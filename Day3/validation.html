@@ -14,12 +14,12 @@
       <form>
         <p>
           <label for="name">Enter your name:</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" name="name" />
         </p>
 
         <p>
           <label for="email">Enter your email:</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" name="email" required />
         </p>
 
         <p>
@@ -29,23 +29,24 @@
             id="pwd"
             minlength="8"
             pattern="(?=.*\d).+"
+            name="pwd"
             required
           />
         </p>
 
         <p>
           <label for="age">Enter your age:</label>
-          <input type="number" id="age" min="18" max="99" />
+          <input type="number" id="age" min="18" max="99" name="age" />
         </p>
 
         <p>
           <label for="portfolio">Attach your portfolio:</label>
-          <input type="url" id="portfolio" />
+          <input type="url" id="portfolio" name="portfolio" />
         </p>
 
         <p>
           <label for="dob">Enter your dob:</label>
-          <input type="date" id="dob" max="2026-07-20" />
+          <input type="date" id="dob" max="2026-07-20" name="dob" />
         </p>
 
         <button type="submit">Submit</button>
