@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Native HTML5 Validation</h1>
+    </header>
+
+    <main>
+      <form>
+        <p>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" />
+        </p>
+
+        <p>
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" required />
+        </p>
+
+        <p>
+          <label for="pwd">Enter your password:</label>
+          <input
+            type="password"
+            id="pwd"
+            minlength="8"
+            pattern="(?=.*\d).+"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="age">Enter your age:</label>
+          <input type="number" id="age" min="18" max="99" />
+        </p>
+
+        <p>
+          <label for="portfolio">Attach your portfolio:</label>
+          <input type="url" id="portfolio" />
+        </p>
+
+        <p>
+          <label for="dob">Enter your dob:</label>
+          <input type="date" id="dob" max="2026-07-20" />
+        </p>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>
