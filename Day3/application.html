@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Section Application Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Multi-Section Application Form</h1>
+    </header>
+
+    <main>
+      <form>
+        <ol>
+          <li aria-current="step">Step 1: Personal Information</li>
+          <li>Step 2: Work Experience</li>
+          <li>Step 3: Documents</li>
+        </ol>
+
+        <fieldset>
+          <legend>Step 1: Personal Information</legend>
+
+          <p>
+            <label for="name"
+              >Enter your name: <span class="required">*</span></label
+            >
+            <input type="text" id="name" name="name" required />
+          </p>
+
+          <p>
+            <label for="email"
+              >Enter your email: <span class="required">*</span></label
+            >
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="phone"
+              >Enter your phone number: <span class="required">*</span></label
+            >
+            <input type="tel" id="phone" name="phone" required />
+          </p>
+
+          <p>
+            <label for="linkedin"
+              >Attach your LinkedIn URL: <span class="required">*</span></label
+            >
+            <input type="url" id="linkedin" name="linkedin" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Step 2: Work Experience</legend>
+
+          <p>
+            <label for="currentrole">What is your current role?</label>
+            <input type="text" id="currentrole" name="currentrole" />
+          </p>
+
+          <p>
+            <label for="currentcompany"
+              >What is your current company name?</label
+            >
+            <input type="text" id="currentcompany" name="currentcompany" />
+          </p>
+
+          <p>
+            <label for="experience"
+              >How much years of experience you have?
+            </label>
+            <input type="number" id="experience" name="experience" />
+          </p>
+
+          <p>
+            <label for="achievements">Mention your key achievements: </label>
+            <textarea
+              name="achievements"
+              id="achievements"
+              aria-describedby="achievements-info"
+            ></textarea>
+          </p>
+          <p id="achievements-info">Max 500 characters</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Step 3: Documents</legend>
+
+          <p>
+            <label for="cv"
+              >Upload your CV: <span class="required">*</span></label
+            >
+            <input type="file" id="cv" name="cv" accept=".pdf,.docx" required />
+          </p>
+
+          <p>
+            <label for="coverletter"
+              >Upload your Cover Letter: <span class="required">*</span></label
+            >
+            <input type="file" id="coverletter" name="coverletter" required />
+          </p>
+
+          <p>
+            <label for="portfolio"
+              >Attach your portfolio: <span class="required">*</span></label
+            >
+            <input type="url" id="portfolio" name="portfolio" required />
+          </p>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
