@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARIA-Patterns</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link" style="color: blueviolet"
+      >Skip to main content</a
+    >
+    <div role="search">
+      <label for="search-input">Search this site</label>
+      <input type="search" id="search-input" name="search" />
+    </div>
+    <button aria-label="Close menu">X</button>
+
+    <button aria-expanded="false" aria-controls="menu-id">Toggle Button</button>
+
+    <div id="menu-id">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div role="alert" aria-live="polite">Notification</div>
+
+    <div id="main-content">
+      <form>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          aria-required="true"
+          aria-describedby="name-help"
+        />
+        <p id="name-help">Please enter your name</p>
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          aria-required="true"
+          aria-describedby="email-help"
+        />
+        <p id="email-help">Please enter your email</p>
+
+        <label for="phone">phone</label>
+        <input
+          type="tel"
+          id="phone"
+          aria-required="true"
+          aria-describedby="phone-help"
+        />
+        <p id="phone-help">Please enter your phone number</p>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
