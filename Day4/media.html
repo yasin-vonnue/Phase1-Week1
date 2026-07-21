@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Page</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Audio & Video with Accessibility</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Sample Video</h2>
+        <video
+          controls
+          width="640"
+          poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VzKHB6vnmhYSF-jV8TTkmteeDCOHgryvQ9Hg-2y_dg&s=10"
+        >
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          <track
+            default
+            kind="captions"
+            srclang="en"
+            label="English"
+            src="simple.vtt"
+          />
+
+          <p>
+            Your browser doesn't support this video. Here is a
+            <a href="https://www.w3schools.com/html/mov_bbb.mp4">
+              Link ot the video
+            </a>
+            instead.
+          </p>
+        </video>
+
+        <details>
+          <summary>Video Details</summary>
+          <p>A small animated video.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Sample Audio</h2>
+        <audio controls>
+          <source src="myAudio.mp3" type="audio/mp3" />
+          <source src="myAudio.mp3" type="audio/ogg" />
+
+          <p>
+            Download <a href="myAudio.mp3" download="myAudio.mp3">MP3</a>
+
+            or <a href="myAudio.mp3">OGG</a> audio.
+          </p>
+        </audio>
+
+        <details>
+          <summary>Audio Details</summary>
+          <p>A small audio of a TREX voice.</p>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
