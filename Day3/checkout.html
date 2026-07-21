@@ -52,7 +52,9 @@
           </p>
 
           <p>
-            <label for="city">Enter your city:</label>
+            <label for="city"
+              >Enter your city: <span class="required">*</span></label
+            >
             <input type="text" id="city" name="city" required />
           </p>
 
@@ -112,10 +114,11 @@
               <span class="required" aria-hidden="true">*</span></label
             >
             <input
-              type="number"
+              type="tel"
               id="cardnumber"
-              maxlength="16"
               name="cardnumber"
+              inputmode="numeric"
+              pattern="[0-9]{16}"
               required
             />
           </p>
@@ -145,6 +148,7 @@
               name="cvv"
               maxlength="4"
               aria-describedby="ccv-info"
+              pattern="[0-9]+"
               required
             />
           </p>
