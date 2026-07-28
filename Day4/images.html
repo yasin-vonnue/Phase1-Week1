@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Images - srcset & picture</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Sample Images</h2>
+        <figure>
+          <img
+            src="https://picsum.photos/800/600"
+            alt="Sample Image 1"
+            srcset="
+              https://picsum.photos/400/300   400w,
+              https://picsum.photos/800/600   800w,
+              https://picsum.photos/1200/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="eager"
+          />
+          <figcaption>Sample Image 1</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://picsum.photos/801/600"
+            alt="Sample Image 2"
+            srcset="
+              https://picsum.photos/401/300   400w,
+              https://picsum.photos/801/600   800w,
+              https://picsum.photos/1201/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+          />
+          <figcaption>Sample Image 2</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://picsum.photos/802/600"
+            alt="Sample Image 3"
+            srcset="
+              https://picsum.photos/402/300   400w,
+              https://picsum.photos/802/600   800w,
+              https://picsum.photos/1202/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+          />
+          <figcaption>Sample Image 3</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://picsum.photos/803/600"
+            alt="Sample Image 4"
+            srcset="
+              https://picsum.photos/403/300   400w,
+              https://picsum.photos/803/600   800w,
+              https://picsum.photos/1203/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+          />
+          <figcaption>Sample Image 4</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://picsum.photos/804/600"
+            alt="Sample Image 5"
+            srcset="
+              https://picsum.photos/404/300   400w,
+              https://picsum.photos/804/600   800w,
+              https://picsum.photos/1204/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+          />
+          <figcaption>Sample Image 5</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://picsum.photos/805/600"
+            alt="Sample Image 6"
+            srcset="
+              https://picsum.photos/405/300   400w,
+              https://picsum.photos/805/600   800w,
+              https://picsum.photos/1205/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
+          />
+          <figcaption>Sample Image 6</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://picsum.photos/806/600"
+            alt="Sample Image 7"
+            srcset="
+              https://picsum.photos/406/300   400w,
+              https://picsum.photos/806/600   800w,
+              https://picsum.photos/1206/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+          <figcaption>Sample Image 7</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://picsum.photos/807/600"
+            alt="Sample Image 8"
+            srcset="
+              https://picsum.photos/407/300   400w,
+              https://picsum.photos/807/600   800w,
+              https://picsum.photos/1207/900 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+          <figcaption>Sample Image 8</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Art Direction</h2>
+        <figure>
+          <picture>
+            <source
+              media="(min-width: 801px)"
+              srcset="https://picsum.photos/1200/400"
+            />
+            <source
+              media="(max-width: 800px)"
+              srcset="https://picsum.photos/700/700"
+            />
+            <img
+              src="https://picsum.photos/700/700"
+              alt="Wide Landscape image"
+            />
+          </picture>
+
+          <figcaption>Landscape Image</figcaption>
+        </figure>
+
+        <figure>
+          <picture>
+            <source
+              media="(min-width: 801px)"
+              srcset="https://picsum.photos/1300/500"
+            />
+            <source
+              media="(max-width: 800px)"
+              srcset="https://picsum.photos/800/800"
+            />
+            <img
+              src="https://picsum.photos/800/800"
+              alt="art direction sample image"
+            />
+          </picture>
+          <figcaption>Landscape Image 2</figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>
