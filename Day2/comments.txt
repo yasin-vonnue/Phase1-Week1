@@ -1,0 +1,4 @@
+On using axe DevTools,
+
+Total Issues: 1
+Images must have alternative text.
