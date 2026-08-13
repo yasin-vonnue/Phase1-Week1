@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+  </head>
+  <body>
+    <header>
+      <h1>Comprehensive Job Application</h1>
+    </header>
+
+    <main>
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <p>
+            <label for="name"
+              >Enter your name: <span class="required">*</span></label
+            >
+            <input type="text" id="name" required name="name" />
+          </p>
+
+          <p>
+            <label for="email"
+              >Enter your email: <span class="required">*</span></label
+            >
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="phone"
+              >Enter your phone number: <span class="required">*</span></label
+            >
+            <input type="tel" id="phone" name="phone" required />
+          </p>
+
+          <p>
+            <label for="age"
+              >Enter your age: <span class="required">*</span></label
+            >
+            <input type="number" id="age" name="age" required />
+          </p>
+
+          <p>
+            <label for="github"
+              >Add your portfolio website:
+              <span class="required">*</span></label
+            >
+            <input type="url" id="github" name="github" required />
+          </p>
+
+          <p>
+            <label for="dob">Enter your DOB: </label>
+            <input type="date" id="dob" name="dob" />
+          </p>
+
+          <p>
+            <label for="entry">Enter your entry time: </label>
+            <input type="time" id="entry" name="entry" />
+          </p>
+
+          <p>
+            <label for="birthdaytime">Birthday (date and time): </label>
+            <input
+              type="datetime-local"
+              id="birthdaytime"
+              name="birthdaytime"
+            />
+          </p>
+
+          <p>
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth" />
+          </p>
+
+          <p>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week" />
+          </p>
+
+          <p>Which vehicle do you have?</p>
+
+          <p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" />
+            <label for="vehicle1">I have a bike</label>
+
+            <input type="checkbox" id="vehicle2" name="vehicle2" />
+            <label for="vehicle2">I have a car</label>
+          </p>
+
+          <p>
+            <label for="myfile"
+              >Attach your resume: <span class="required">*</span></label
+            >
+            <input type="file" id="myfile" name="myfile" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Work Experience</legend>
+
+          <h2>Job 1</h2>
+
+          <p>
+            <label for="company1">Company 1:</label>
+            <input type="text" id="company1" name="company1" />
+          </p>
+
+          <p>
+            <label for="role1">Role 1:</label>
+            <input type="text" id="role1" name="role1" />
+          </p>
+
+          <p>
+            <label for="startdate1">Start Date:</label>
+            <input type="date" id="startdate1" name="startdate1" />
+          </p>
+
+          <p>
+            <label for="enddate1">End Date:</label>
+            <input type="date" id="enddate1" name="enddate1" disabled />
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              id="currentwork1"
+              name="currentwork1"
+              checked
+            />
+            <label for="currentwork1">Do you currently work here?</label>
+          </p>
+
+          <h2>Job 2</h2>
+
+          <p>
+            <label for="company">Company 2:</label>
+            <input type="text" id="company" name="company" />
+          </p>
+
+          <p>
+            <label for="role2">Role 2:</label>
+            <input type="text" id="role2" name="role2" />
+          </p>
+
+          <p>
+            <label for="startdate">Start Date:</label>
+            <input type="date" id="startdate" name="startdate" />
+          </p>
+
+          <p>
+            <label for="enddate2">End Date:</label>
+            <input type="date" id="enddate2" name="enddate2" />
+          </p>
+
+          <p>
+            <input type="checkbox" id="currentwork2" name="currentwork2" />
+            <label for="currentwork2">Do you currently work here?</label>
+          </p>
+
+          <h2>Job 3</h2>
+
+          <p>
+            <label for="company2">Company 3:</label>
+            <input type="text" id="company2" name="company2" />
+          </p>
+
+          <p>
+            <label for="role3">Role 3:</label>
+            <input type="text" id="role3" name="role3" />
+          </p>
+
+          <p>
+            <label for="startdate3">Start Date:</label>
+            <input type="date" id="startdate3" name="startdate3" />
+          </p>
+
+          <p>
+            <label for="enddate3">End Date:</label>
+            <input type="date" id="enddate3" name="enddate3" />
+          </p>
+
+          <p>
+            <input type="checkbox" id="currentwork3" name="currentwork3" />
+            <label for="currentwork3">Do you currently work here?</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Education Section</legend>
+
+          <h2>School</h2>
+
+          <p>
+            <label for="school"
+              >Name of the School in which you enrolled previously:
+              <span class="required">*</span></label
+            >
+            <input type="text" id="school" name="school" />
+          </p>
+
+          <p>
+            <label for="graduation1"
+              >Which year did your graduate?
+              <span class="required">*</span></label
+            >
+            <input type="month" id="graduation1" name="graduation1" />
+          </p>
+
+          <p>
+            <label for="grade1"
+              >Enter your grade(%): <span class="required">*</span></label
+            >
+            <input type="number" id="grade1" name="grade1" />
+          </p>
+
+          <h2>College</h2>
+
+          <p>
+            <label for="college"
+              >Name of the College in which you pursued your major:
+              <span class="required">*</span></label
+            >
+            <input type="text" id="college" name="college" />
+          </p>
+
+          <p>
+            <label for="graduation2"
+              >Which year did your graduate?
+              <span class="required">*</span></label
+            >
+            <input type="month" id="graduation2" name="graduation2" />
+          </p>
+
+          <p>
+            <label for="grade2"
+              >Enter your grade(%): <span class="required">*</span></label
+            >
+            <input type="number" id="grade2" name="grade2" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skills Section</legend>
+
+          <fieldset>
+            <legend>Programming Languages</legend>
+
+            <p>
+              <input type="checkbox" name="python" id="python" />
+              <label for="python">Python</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="java" id="java" />
+              <label for="java">Java</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="cpp" id="cpp" />
+              <label for="cpp">CPP</label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Backend Frameworks</legend>
+
+            <p>
+              <input type="checkbox" name="flask" id="flask" />
+              <label for="flask">Flask</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="django" id="django" />
+              <label for="django">Django</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="springboot" id="springboot" />
+              <label for="springboot">Springboot</label>
+            </p>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Notes</legend>
+          <p>
+            <label for="notes">Notes</label>
+            <textarea name="notes" id="notes" rows="10"></textarea>
+          </p>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

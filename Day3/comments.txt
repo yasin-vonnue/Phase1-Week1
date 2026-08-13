@@ -1,0 +1,12 @@
+
+Task 6: Accessible Form Audit
+
+    -Tested all form created today by running axe DevTools and Lighthouse Accessibility on each form.
+
+    -Every form has a programmatic label(for/id, or aria-label, or aria-labelledby)
+
+    -Ensured every required field has both the required HTML attribute and a visible indicator.
+
+    -Checked the tab order through every form by pressing Tab in the browser - the tab order followed the visual reading order.
+
+    -We have to use proper JS function to handle aria-describedby text. 
